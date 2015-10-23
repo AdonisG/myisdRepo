@@ -1,0 +1,24 @@
+summ1=(0)
+summ=int(0)
+x=int(input("Please enter the number of characters you wil be using:   "))
+if x == 0:
+    print("Error, please restart")
+else:
+    while x > 0:
+        if x == 0:
+            print(summ1)
+            break
+        elif x == 1:
+            no1=int(input("Please enter the number here:  "))
+            summ1=summ1 + no1
+            print("Summarisation is",summ1)
+            break
+        elif x != 1:
+            no1=int(input("Please enter the number here:  "))
+            x-=1
+            no=int(input("Please enter the number here:  "))
+            x-=1
+            summ=no1 + no
+            summ1=summ1 + summ
+            summ=int(0)
+print(summ1)
