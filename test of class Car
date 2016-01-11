@@ -1,0 +1,9 @@
+from Exce2 import Car
+
+Car2=Car("BMW", "M3", 310, 10000, True)
+Car2.showDetails()
+Car2.startCar()
+
+Car_2=Car("BMW", "M3", 310, 10000, True)
+Car_2.showDetails()
+Car_2.stopCar(2000)
