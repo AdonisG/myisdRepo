@@ -1,0 +1,14 @@
+
+x=int(2)
+y=" "
+shoplist=[]
+while x >= 1 :
+    y=str(input("Type in an item or hit the RETURN KEY to continue : "))
+    if y=="" :
+        break
+    else :
+        shoplist.append(y)
+    x+=1
+print(shoplist)
+
+    
