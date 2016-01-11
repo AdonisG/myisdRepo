@@ -1,0 +1,4 @@
+from Exce1 import Book
+
+Book2=Book("GoT","G. R. R. Marttin",2001)
+Book2.showDetails()
