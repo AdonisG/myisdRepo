@@ -1,0 +1,16 @@
+sent1=input(str("Type in first sentence: "))
+sent2=input(str("Type in second sentence: "))
+sent=sent1 +" "+ sent2
+mylist = sent.split()
+mylist.sort()
+print("Number of words in list : ",len(mylist))
+
+mydictonary = {}
+
+for item in mylist:
+    numberOfOccurences = mylist.count(item)
+    mydictonary[item]=numberOfOccurences
+
+
+print(mydictonary)
+
