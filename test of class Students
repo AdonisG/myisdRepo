@@ -1,0 +1,4 @@
+from Exce1 import Student
+
+student2= Student("Onisiforos","Vladimitou",21297420,"Creative Computing")
+student2.showDetails()
