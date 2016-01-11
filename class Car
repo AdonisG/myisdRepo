@@ -1,0 +1,35 @@
+class Car():
+
+    def __init__(self, manufacture, brand, maxspeed, mileage, driving):
+        self.manufacture=manufacture
+        self.brand=brand
+        self.maxspeed=maxspeed
+        self.mileage=mileage
+        self.driving=driving
+        
+    def showDetails(self):
+        print("Car Manufacture is: ", self.manufacture)
+        print("Brand: ",self.brand)
+        print("Maximum Speed: ",self.maxspeed)
+        print("Mileage: ", self.mileage)
+        print("Car Driving: ",self.driving)
+
+    def startCar(self):
+        self.driving= True
+        print("Driving NOW" )
+
+    def stopCar(self,mileage):
+        self.driving= False
+        self.mileage=mileage+self.mileage
+        print("NOT Driving" , self.mileage)
+
+     
+Car1= Car("BMW", "M2", 250, 30000, True)
+Car1.showDetails()
+Car1.startCar()
+
+
+
+Car_1= Car("BMW", "M2", 250, 30000, False)
+Car_1.showDetails()
+Car_1.stopCar(1000)
