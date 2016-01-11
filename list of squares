@@ -1,0 +1,6 @@
+squares=[0]
+x=int(1)
+while x <= 10:
+    squares.append(x**2)
+    x+=1
+print(squares)
