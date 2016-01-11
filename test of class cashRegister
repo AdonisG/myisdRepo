@@ -1,0 +1,34 @@
+class CashRegister :
+   
+    def __init__(self) :
+        self._itemCount = 0
+        self._totalPrice = 0.0
+   
+    def addItem(self, price) :
+        self._itemCount = self._itemCount + 1
+        self._totalPrice = self._totalPrice + price 
+   
+    def getTotal(self) :
+        return self._totalPrice
+
+    def getCount(self) :
+        return self._itemCount
+
+    def clear(self) :
+        self._itemCount = 0
+        self._totalPrice = 0.0
+
+    def giveChange(self, payment) :
+        return payment-self._totalPrice
+
+from Exce2 import CashRegister
+
+Register1=CashRegister()
+Register1.addItem(1.50)
+print("Item No: ",Register1.getCount())
+print("Price: ","%.2f" %Register1.getTotal())
+print("Change: ","%.2f" %Register1.giveChange(2.00))
+Register1.addItem(3.20)
+print("Item No: ",Register1.getCount())
+print("Price: ","%.2f" %Register1.getTotal())
+print("Change: ","%.2f" %Register1.giveChange(5.00))
