@@ -1,0 +1,31 @@
+class CashRegister :
+   
+    def __init__(self) :
+        self.itemCount = 0
+        self.totalPrice = 0.0
+   
+    def addItem(self, price) :
+        self.itemCount = self.itemCount + 1
+        self.totalPrice = self.totalPrice + price 
+   
+    def getTotal(self) :
+        return self.totalPrice
+
+    def getPound(self) :
+        return round(self.totalPrice)
+
+    def getCount(self) :
+        return self.itemCount
+
+    def clear(self) :
+        self.itemCount = 0
+        self.totalPrice = 0.0
+
+    def giveChange(self, payment) :
+        return payment-self.totalPrice
+
+register1 = CashRegister()        
+register1.addItem(2.90)
+print("Item No: ",register1.getCount())
+print("Price : ","%.2f" %register1.getTotal())
+print("Change Amount: ","%.2f" %register1.giveChange(5.00))
